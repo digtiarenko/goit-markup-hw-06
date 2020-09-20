@@ -192,6 +192,7 @@ input[type="radio"].visually-hidden {
 }
 .blue-button {
   display: inline-block;
+
   padding: 10px 32px;
   min-width: 200px;
   min-height: 50px;
@@ -421,10 +422,6 @@ div.background {
   margin-right: 70px;
 }
 
-/* .footer-column:last-child {
-  margin-left: 93px;
-} */
-
 .footer {
   /* margin-top: 94px; */
   padding-top: 60px;
@@ -490,6 +487,15 @@ div.background {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
+}
+
+.send-icon {
+  fill: #fff;
+  position: absolute;
+  margin-left: 10px;
+}
+.blue-button.send {
+  text-align: left;
 }
 
 /* __________________________________Модальное окно _____________________________ */
@@ -582,7 +588,8 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   color: rgba(117, 117, 117, 0.5);
 }
-.policy {
+.form-label.policy {
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -613,6 +620,7 @@ textarea::placeholder {
   top: 8px;
   right: 8px;
 
+  border-radius: 50%;
   width: 30px;
   height: 30px;
   border: none;
