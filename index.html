@@ -391,6 +391,15 @@
             </li>
           </ul>
         </div>
+        <div class="footer-column">
+          <form class="footer-form-field">
+            <label class="h3" for="email">
+              <p class="h3">Подпишитесь на рассылку</p>
+            </label>
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <button class="blue-button" type="submit">Подписаться</button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- ________________________________________MОДАЛЬНОЕ ОКНО ______________________________________ -->
@@ -401,6 +410,46 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <div>
+          <span class="modal-text"
+            >Оставьте свои данные, мы вам перезвоним</span
+          >
+          <form class="modal-form">
+            <div class="form-field">
+              <label class="form-label" for="name">Имя</label>
+              <input class="form-input" type="text" name="name" id="name" />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="tel">Телефон</label>
+              <input class="form-input" type="tel" name="tel" />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="e-mail">Почта</label>
+              <input class="form-input" type="tel" name="e-mail" />
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="comment">Комментарий</label>
+              <textarea
+                type="text"
+                name="comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+            <div class="checkbox">
+              <input class="form-input" type="checkbox" name="policy" />
+              <label class="form-label policy" for="policy">
+                Соглашаюсь с рассылкой и принимаю
+                <a href="#">Условия договора</a>
+              </label>
+            </div>
+
+            <div>
+              <button class="blue-button submit" type="submit">
+                Отправить
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
