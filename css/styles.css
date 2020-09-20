@@ -546,6 +546,8 @@ div.background {
   margin-right: auto;
 }
 .form-field {
+  margin-top: 10px;
+  margin-bottom: 4px;
   display: flex;
   flex-direction: column;
 }
@@ -557,7 +559,6 @@ div.background {
   margin-bottom: 30px;
 }
 .form-label {
-  margin-top: 10px;
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -596,6 +597,7 @@ textarea::placeholder {
 }
 
 .form-input[type="checkbox"] {
+  margin-right: 8px;
   width: 16px;
   height: 15px;
 }
