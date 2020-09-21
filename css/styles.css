@@ -552,12 +552,21 @@ div.background {
   margin-right: auto;
 }
 .form-field {
+  position: relative;
   margin-top: 10px;
   margin-bottom: 4px;
   display: flex;
   flex-direction: column;
 }
-.checkbox {
+
+.form-field-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field-icon .checkbox {
   display: flex;
   margin-right: auto;
   margin-left: auto;
@@ -581,6 +590,12 @@ div.background {
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field textarea:focus {
+  border-color: #2196f3;
+  outline: none;
 }
 textarea::placeholder {
   font-size: 12px;
@@ -598,9 +613,21 @@ textarea::placeholder {
   color: var(--accent-text-color);
 }
 .form-input {
-  padding: 11px 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 42px;
+  padding-right: 12px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+.form-input:focus + .form-field-icon {
+  fill: #2196f3;
 }
 
 .form-input[type="checkbox"] {
@@ -608,6 +635,7 @@ textarea::placeholder {
   width: 16px;
   height: 15px;
 }
+
 .blue-button.submit {
   display: block;
   margin-right: auto;
@@ -631,6 +659,10 @@ textarea::placeholder {
 .close {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-button:hover .close {
+  fill: var(--accent-text-color);
 }
 
 /* ____________СТРАНИЦА ПОРТФОЛИО__________________
