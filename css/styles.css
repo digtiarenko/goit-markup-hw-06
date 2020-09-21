@@ -478,6 +478,8 @@ div.background {
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
 
+  color: #f5f4fa;
+
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
@@ -566,13 +568,6 @@ div.background {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-field-icon .checkbox {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center;
-  margin-bottom: 30px;
-}
 .form-label {
   margin-bottom: 4px;
 
@@ -630,10 +625,36 @@ textarea::placeholder {
   fill: #2196f3;
 }
 
-.form-input[type="checkbox"] {
-  margin-right: 8px;
+.checkbox {
+  margin-bottom: 30px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  outline: none;
+}
+.form-label.policy {
+  display: inline-block;
+}
+.form-label.policy::before {
+  content: "";
+  display: inline-block;
   width: 16px;
   height: 15px;
+  margin-bottom: -2px;
+  margin-left: 8px;
+  margin-right: 8px;
+  background-image: url(../checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+input[type="checkbox"]:checked + .form-label.policy::before {
+  background-image: url(../check.svg);
+  background-color: #2196f3;
+  border-radius: 3px;
 }
 
 .blue-button.submit {
