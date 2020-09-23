@@ -309,6 +309,7 @@ div.background {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
   padding-bottom: 30px;
+  background-color: #fff;
 }
 
 .basic-section h4 {
@@ -432,7 +433,7 @@ div.background {
   color: #ffffff;
   margin-bottom: 20px;
 }
-.footer p {
+.footer .footer__text {
   color: #ffffff;
   font-weight: normal;
   font-style: normal;
@@ -563,7 +564,7 @@ div.background {
 
 .form-field-icon {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -665,21 +666,21 @@ input[type="checkbox"]:checked + .form-label.policy::before {
 
 .close-button {
   position: absolute;
-  display: flex;
-  top: 8px;
+
+  top: 11px;
   right: 8px;
 
   border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
-  border: none;
+
   margin: 0;
   padding: 0;
   background-color: #fff;
 }
 .close {
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 3px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-button:hover .close {
@@ -820,7 +821,7 @@ input[type="checkbox"]:checked + .form-label.policy::before {
   line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
 }
 .portfolio-title {
